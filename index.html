@@ -31,7 +31,7 @@
   async function sudah(){katajawab.innerHTML = jawaban;pesanwhatsapp = jawaban;katajawab.style="display:inline-flex";}
   async function menuju(){
            if(fungsi==2){kuis();}
-   else if(fungsi==3){await swals.fire('Kirim jawaban ke WhatsApp gw, ya!');window.location = "https://api.whatsapp.com/send?phone=6282328447305" + pesanwhatsapp;setTimeout(maubucin,3500);}
+   else if(fungsi==3){await swals.fire('Kirim jawaban ke WhatsApp gw, ya!');window.location = "https://api.whatsapp.com/send?phone=6282328447305&text=" + pesanwhatsapp;setTimeout(maubucin,3500);}
    }
 </script>
 
